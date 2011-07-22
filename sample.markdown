@@ -1,4 +1,4 @@
-<link href="file://localhost/Users/kevin/Documents/docs/code/markdowncss/markdown.css" rel="stylesheet"></link>
+<link href="https://kevinburke.bitbucket.org/markdowncss/markdown.css" rel="stylesheet"></link>
 
 # This is a really big, large title.
 
@@ -37,7 +37,7 @@ This is what a sample blockquote looks like:
 >
 > Then he detailed the conversation overheard by him at the Colosseum,
 > between the count and Vampa, in which the count had promised to obtain the
-> release of the bandit Peppino, — an engagement which, as our readers are
+> release of the bandit Peppino, - an engagement which, as our readers are
 > aware, he most faithfully fulfilled. At last he arrived at the adventure of
 > the preceding night, and the embarrassment in which he found himself placed
 > by not having sufficient cash by six or seven hundred piastres to make up the
@@ -112,13 +112,16 @@ the CSS I'm using to style this document:
         font-size: 16px;
         line-height: 24px;
         max-width: 540px;
-        border: 1px solid #ccc;
     }
     pre {
         padding: 0px 24px;
+        max-width: 800px;
+        white-space: pre-wrap;
     }
     code {
-        font-family: Consolas, Monaco, Andale Mono, sans-serif;
+        font-family: Consolas, Monaco, Andale Mono, monospace;
+        line-height: 1.5;
+        font-size: 13px;
     }
     aside {
         display: block;
@@ -133,3 +136,15 @@ the CSS I'm using to style this document:
         color: #666;
         max-width: 460px;
     }
+    hr {
+        width: 540px;
+        text-align: left;
+        margin: 0 auto 0 0;
+        color: #999;
+    }
+
+### Get Started
+
+Include the following line at the top of your `.markdown` file:
+
+    <link href="http://kevinburke.bitbucket.org/markdowncss/markdown.css" rel="stylesheet"></link>
