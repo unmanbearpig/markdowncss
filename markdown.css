@@ -36,6 +36,13 @@ a {
     padding: 0;
     vertical-align: baseline;
 }
+a:hover {
+    text-decoration: none;
+    color: #ff6600;
+}
+a:visited {
+    color: purple;
+}
 ul, ol {
     padding: 0;
     margin: 0;
@@ -154,8 +161,7 @@ input[type=checkbox], input[type=radio] {
 input[type=text],
 input[type=password],
 textarea,
-select,
-.uneditable-input {
+select {
   display: inline-block;
   width: 210px;
   padding: 4px;
