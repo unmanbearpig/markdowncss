@@ -5,4 +5,4 @@ def printAndSend cmd
     system(cmd)
 end
 
-watch('(.*)\.markdown') {|md| printAndSend("markdown #{md[1]}.markdown > #{md[1]}.html") }
+watch('(.*)\.md') {|md| printAndSend("markdown #{md[1]}.md > #{md[1]}.html") }
